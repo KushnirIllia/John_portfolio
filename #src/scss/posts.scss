@@ -1,0 +1,123 @@
+.posts {
+  background: #EDF7FA;
+  min-height: 396px;
+  width: 100vw;
+  padding: 28px 0 32px 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #00A8CC;
+    text-decoration: underline;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template: 300px / repeat(2, 418px);
+    grid-auto-rows: 300px;
+    gap: 42px;
+    justify-content: space-between;
+  }
+}
+.post {
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 24px 21px 35px ;
+  margin: 0 auto;
+  text-align: left;
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: $main-color;
+    padding-bottom: 37px ;
+  }
+  &__date {
+    border-right: 1px solid #000000;
+    padding-right: 20px;
+  }
+  &__text {
+    padding-left: 20px;
+  }
+  &__date, &__text {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    line-height: 23px;
+    color: $main-color;
+  }
+}
+@media (max-width: 992px) {
+  .posts {
+    &__wrapper {
+      grid-template: 330px / repeat(2,340px);
+      grid-auto-rows: 330px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .posts {
+    &__wrapper {
+      grid-template: 270px / auto;
+      grid-auto-rows: 270px;
+      row-gap: 20px;
+    }
+
+  }
+  .post {
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 25px;
+    }
+    &__text, &__date {
+      margin-bottom: 16px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .posts {
+    &__wrapper {
+      grid-template: 354px / auto;
+      grid-auto-rows: 354px;
+      row-gap: 20px;
+    }
+
+  }
+  .post {
+    padding: 20px;
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 25px;
+    }
+    &__text, &__date {
+      font-size: 16px;
+      margin-bottom: 19px;
+    }
+    &__text {
+      padding-left: 10px;
+      max-width: 146px;
+    }
+    &__date {
+      padding-right: 10px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}

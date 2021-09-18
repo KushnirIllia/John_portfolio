@@ -1,0 +1,20 @@
+@import 'libs/normalize';
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap');
+
+
+// start of Variables ========
+$main-color: #21243D;
+// end of Variables ========
+
+
+// start of Connect files ==========
+@import 'main/main';
+@import 'main/main-media';
+
+@import 'header';
+@import 'resume';
+@import 'posts';
+@import 'footer';
+
+// end of Connect files ==========

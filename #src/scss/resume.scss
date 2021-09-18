@@ -1,0 +1,142 @@
+.resume {
+  padding: 200px 0 70px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template: auto / 580px 243px;
+    //gap: 316px;
+    //316px
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin: 40px 0 47px 0;
+    font-size: 16px;
+    line-height: 23px;
+    color: $main-color;
+    font-weight: 400;
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    background: #FF6464;
+    border-radius: 2px;
+    max-width: 210px;
+    cursor: pointer;
+  }
+
+  &__image {
+    position: relative;
+    width: auto;
+    height: 243px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background: #d5e2e8;
+      top: 10px;
+      right: 5px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .resume {
+    &__wrapper {
+    grid-template: auto / 500px 243px;
+    gap: 214px;
+  }
+  }
+}
+@media (max-width: 992px) {
+  .resume {
+    &__wrapper {
+      grid-template: auto / 430px 230px;
+      gap: 60px;
+    }
+
+    &__image {
+      height: 230px;
+    }
+
+    &__text {
+      margin: 35px 0 40px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding-top: 120px;
+    &__wrapper {
+      grid-template: repeat(2, auto) / 1fr;
+      gap: 60px;
+      grid-auto-flow: column;
+    }
+
+    &__image {
+      text-align: center;
+      img {
+        //margin: 0 auto;
+        //display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45%;
+      }
+      &:before {
+        width: 45%;
+        top: calc(50% + 10px);
+        left: calc(50% - 5px);
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__text {
+      margin: 35px 0 40px 0;
+    }
+
+    &__info {
+      order: 1;
+      text-align: center;
+      padding: 0 24px;
+    }
+    &__btn  {
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .resume {
+    padding: 83px 0 55px 0;
+    &__image {
+      img {
+        width: 175px;
+        height: 175px;
+      }
+      &:before {
+        width: 175px;
+        height: 175px;
+      }
+    }
+    &__wrapper {
+      gap: 30px;
+    }
+  }
+}
