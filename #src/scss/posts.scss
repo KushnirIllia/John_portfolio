@@ -39,20 +39,24 @@
     color: $main-color;
     padding-bottom: 37px ;
   }
+  &__content {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    //width: 275px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    span {
+      padding-left: 20px;
+    }
+  }
   &__date {
     border-right: 1px solid #000000;
     padding-right: 20px;
   }
-  &__text {
-    padding-left: 20px;
-  }
-  &__date, &__text {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 20px;
-  }
+
   &__descr {
     line-height: 23px;
     color: $main-color;
@@ -81,7 +85,7 @@
       line-height: 32px;
       padding-bottom: 25px;
     }
-    &__text, &__date {
+    &__content {
       margin-bottom: 16px;
     }
     &__descr {
@@ -105,8 +109,8 @@
       line-height: 32px;
       padding-bottom: 25px;
     }
-    &__text, &__date {
-      font-size: 16px;
+    &__content span, &__date{
+      font-size: 15px;
       margin-bottom: 19px;
     }
     &__text {

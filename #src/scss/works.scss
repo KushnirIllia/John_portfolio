@@ -1,0 +1,132 @@
+.works  {
+  padding: 30px 0 82px 0;
+  &__wrapper {
+    display: grid;
+    grid-template: repeat(3, auto) / 100%;
+    grid-auto-rows: minmax(270px, auto);
+  }
+}
+.work {
+  display: grid;
+  grid-template: 180px / 246px 594px;
+  column-gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid #E0E0E0;
+  &__title {
+    font-size: 30px;
+  }
+  &__image {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+
+    }
+  }
+  &__content {
+    display: grid;
+    //justify-content: space-between;
+    //align-items: center;
+    //wi
+    grid-template: auto / 62px auto;
+    //justify-content: center;
+    align-items: center;
+    gap: 26px;
+    span {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 29px;
+      color: #8695A4;
+    }
+
+    margin-bottom: 20px;
+  }
+  &__year {
+    background: #000;
+    //height: ;
+    border-radius: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: white;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 26px;
+      padding: 2px 0 0 0;
+    }
+  }
+  &__descr {
+    color: $main-color;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+  .work {
+    grid-template: auto / 246px 456px;
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .work {
+    grid-template: repeat(2, auto) / 100%;
+    padding: 20px;
+    &__title {
+      font-size: 34px;
+      padding: 15px 0;
+    }
+    &__image {
+      width: 360px;
+      margin: 0 auto;
+      height: 220px;
+    }
+    &__info {
+      text-align: center;
+
+    }
+    &__content {
+      grid-template: auto / 62px auto;
+      justify-content: center;
+      gap: unset;
+      span {
+        width: 140px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .work {
+    grid-template: repeat(2, auto) / 100%;
+    padding: 20px;
+    &__title {
+      font-size: 24px;
+      padding: 15px 0;
+    }
+    &__image {
+      width: auto;
+      margin: 0 auto;
+    }
+    &__info {
+      text-align: center;
+
+    }
+    &__content {
+      grid-template: auto / 62px auto;
+      justify-content: center;
+      span {
+        width: 140px;
+        font-size: 16px;
+      }
+    }
+  }
+}
