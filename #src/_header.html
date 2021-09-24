@@ -1,15 +1,16 @@
 <header class="header">
   <div class="header__container">
     <div class="header-menu menu">
-      <div class="header-menu__btn">
-        <span></span><span></span><span></span>
-      </div>
       <nav class="header-menu__body">
-        <ul class="header-menu__list">
-          <li class="header-menu__item">Works</li>
-          <li class="header-menu__item">Blog</li>
-          <li class="header-menu__item">Contact</li>
-        </ul>
+        <div class="header-menu__list">
+<!--          @@if(link!=1){-->
+<!--          <a href="/" class="header-menu__item">Home</a>-->
+<!--          }-->
+<!--          <a href="/"><li class="header-menu__item header-menu__item_move-to-home">Home</li></a>-->
+          <a href="works.html" class="header-menu__item  @@if(link==2){_active}">Works</a>
+          <a href="blog.html" class="header-menu__item  @@if(link==3){_active}">Blog</a>
+          <a href="#" class="header-menu__item">Contact</a>
+        </div>
       </nav>
     </div>
   </div>

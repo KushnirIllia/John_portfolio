@@ -25,12 +25,49 @@ body {
   color: $main-color;
   text-align: left;
 }
+
 .section-name {
   font-weight: 400;
   font-size: 22px;
   line-height: 60px;
   color: $main-color;
 }
+
 a {
   cursor: pointer;
+  text-decoration: unset;
+}
+
+.pb {
+  padding-bottom: 85px;
+}
+
+.data-info {
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__text {
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+  }
+
+  &__year {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    //line-height: 60px;
+    height: auto;
+    padding: 7px 10px 5px;
+    background: #000;
+    width: 62px;
+    border-radius: 16px;
+    margin-right: 30px;
+
+    &_color_red {
+      background: #FF7C7C;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .resume {
-  padding: 200px 0 70px 0;
+  padding: 0 0 70px 0;
 
   &__wrapper {
     display: grid;
@@ -82,7 +82,7 @@
 
 @media (max-width: 768px) {
   .resume {
-    padding-top: 120px;
+
     &__wrapper {
       grid-template: repeat(2, auto) / 1fr;
       gap: 60px;
@@ -124,7 +124,7 @@
 }
 @media (max-width: 576px) {
   .resume {
-    padding: 83px 0 55px 0;
+    padding: 0 0 55px 0;
     &__image {
       img {
         width: 175px;

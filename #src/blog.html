@@ -1,10 +1,19 @@
-<section class="posts">
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('_head.html', {
+"title":"Blog"
+
+})
+
+<body>
+@@include('_header.html',{
+"link":"3"
+})
+<div class="pb"></div>
+<section class="blog">
   <div class="container">
-    <div class="posts__header">
-      <div class="section-name">Recent posts</div>
-      <a class="posts__link">View all</a>
-    </div>
-    <div class="posts__wrapper">
+    <div class="blog__wrapper">
       <div class="post">
         <div class="post__title">Making a design system from scratch</div>
         <div class="post__content">
@@ -16,7 +25,7 @@
         </div>
       </div>
       <div class="post">
-        <div class="post__title">Creating pixel perfect icons in Figma</div>
+        <div class="post__title">Making a design system from scratch</div>
         <div class="post__content">
           <div class="post__date">12 Feb 2020</div>
           <span>Figma, Icon Design</span>
@@ -26,7 +35,17 @@
         </div>
       </div>
       <div class="post">
-        <div class="post__title">Creating pixel perfect icons in Figma</div>
+        <div class="post__title">Making a design system from scratch</div>
+        <div class="post__content">
+          <div class="post__date">12 Feb 2020</div>
+          <span>Figma, Icon Design</span>
+        </div>
+        <div class="post__descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__title">Making a design system from scratch</div>
         <div class="post__content">
           <div class="post__date">12 Feb 2020</div>
           <span>Figma, Icon Design</span>
@@ -38,3 +57,10 @@
     </div>
   </div>
 </section>
+
+@@include('_footer.html')
+
+@@include('_js.html')
+</body>
+
+</html>

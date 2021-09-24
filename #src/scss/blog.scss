@@ -1,0 +1,19 @@
+.blog {
+  &__wrapper {
+    padding-bottom: 50px;
+    .post {
+      box-shadow: unset;
+      border-bottom: 1px solid #E0E0E0;
+      padding: 32px 40px 32px 0;
+      &__title {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  .blog .post {
+    padding: 32px 0;
+  }
+}

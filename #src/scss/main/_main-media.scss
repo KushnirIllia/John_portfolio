@@ -15,15 +15,41 @@
   .container {
     max-width: 540px;
   }
+  .pb {
+    padding-top: 120px;
+  }
   .title {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
   }
+  .data-info {
+    //align-items: center;
+    justify-content: center;
+    &__text {
+      font-size: 17px;
+
+    }
+  }
 }
 @media (max-width: 576px) {
+  .pb {
+    padding-top: 83px;
+  }
   .container {
     max-width: 100%;
     padding: 0 15px;
+  }
+  .data-info {
+    justify-content: space-around;
+    &__year {
+      margin-right: 0;
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 16px;
+
+    }
   }
 }
